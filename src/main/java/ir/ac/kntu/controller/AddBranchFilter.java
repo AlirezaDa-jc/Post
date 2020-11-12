@@ -1,3 +1,8 @@
+/*
+ * @author Alireza.d.a
+ */
+
+
 package ir.ac.kntu.controller;
 
 import ir.ac.kntu.MyApp;
@@ -6,10 +11,8 @@ import ir.ac.kntu.domains.City;
 import ir.ac.kntu.services.BranchService;
 import ir.ac.kntu.services.CityService;
 
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 

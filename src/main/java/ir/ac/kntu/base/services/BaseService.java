@@ -1,3 +1,7 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.base.services;
 
 import java.io.Serializable;
@@ -11,7 +15,6 @@ public interface BaseService<E, PK extends Serializable> {
 
     void deleteById(PK id);
 
-//    void deleteAll();
 
     List<E> findAll();
 

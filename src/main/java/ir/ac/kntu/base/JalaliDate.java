@@ -1,7 +1,11 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.base;
 
 
-public class JalaliDate implements Comparable<JalaliDate>{
+public class JalaliDate implements Comparable<JalaliDate> {
 
     private int d, m, y;
 

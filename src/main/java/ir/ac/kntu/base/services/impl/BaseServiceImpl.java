@@ -1,3 +1,7 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.base.services.impl;
 
 
@@ -32,11 +36,6 @@ public class BaseServiceImpl<E, PK extends Number, Repository extends BaseReposi
     public void deleteById(PK id) {
         baseRepository.deleteById(id);
     }
-
-//    @Override
-//    public void deleteAll() {
-//        baseRepository.deleteAll();
-//    }
 
     @Override
     public List<E> findAll() {
