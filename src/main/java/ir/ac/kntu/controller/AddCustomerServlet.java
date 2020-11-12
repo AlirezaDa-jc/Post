@@ -26,7 +26,7 @@ public class AddCustomerServlet extends HttpServlet {
 
         try {
             String name = req.getParameter("name");
-            String nationalCode = req.getParameter("nationalCode");
+            long nationalCode = Long.parseLong(req.getParameter("nationalCode"));
             Customer customer = new Customer(name, nationalCode);
             MyApp.getCustomerService().saveOrUpdate(customer);
             out.println("<font color=red> Customer Successfully Added </font>");

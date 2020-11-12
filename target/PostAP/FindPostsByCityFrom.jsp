@@ -1,12 +1,11 @@
+<%@ page import="ir.ac.kntu.MyApp" %>
 <%@ page import="ir.ac.kntu.domains.City" %>
 <%@ page import="java.util.List" %>
-<%@ page import="ir.ac.kntu.MyApp" %>
-<%@ page import="ir.ac.kntu.MyApp" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Alireza
   Date: 11/11/2020
   Time: 10:58 PM
-  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

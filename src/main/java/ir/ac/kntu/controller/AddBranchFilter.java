@@ -31,10 +31,7 @@ public class AddBranchFilter implements Filter {
         Branch branch = new Branch();
         branch.setCity(city);
         branch.setEmployees(employees);
-        System.out.println(branch.getEmployees());
         branchService.saveOrUpdate(branch);
-        city.addBranch(branch);
-        cityService.saveOrUpdate(city);
         chain.doFilter(req, resp);
 
     }

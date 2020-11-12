@@ -56,12 +56,14 @@ public class AddPostServlet extends HttpServlet {
         post.setSituation(situation);
         post.setTransportation(transportation);
         post.setType(type);
+        resp.setContentType("text/html");
+        RequestDispatcher rd = req.getRequestDispatcher("/Menu.jsp");
+        PrintWriter out = resp.getWriter();
         try {
             MyApp.getPostService().saveOrUpdate(post);
-
+            out.println("<font color=red> Post Successfully Added </font>");
+            rd.include(req, resp);
         } catch (IllegalArgumentException ex) {
-            RequestDispatcher rd = req.getRequestDispatcher("/AddPost.jsp");
-            PrintWriter out = resp.getWriter();
             out.println("<font color=red>" + ex.getMessage() + "</font>");
             rd.include(req, resp);
         }

@@ -25,19 +25,19 @@
 <h3><%=userName %></h3>
 <br>
 <div class="btn-group-vertical d-flex" style="width: 30%;justify-content: center">
-<a class="btn btn-info" href="AddBranch.jsp" role="button">Add Branch</a><br><br>
-<a class="btn btn-info" href="AddCustomer.html" role="button">Add Customer</a><br><br>
-<a class="btn btn-info" href="AddCity.html" role="button">Add City</a><br><br>
-<a class="btn btn-info" href="AddPost.jsp" role="button">Add Post</a><br><br>
-<a class="btn btn-info" href="DisplayPosts.jsp" role="button">Display Posts</a><br><br>
-<a class="btn btn-info" href="DisplaySentPosts.jsp" role="button">Display Sent Posts</a><br><br>
-<a class="btn btn-info" href="DisplayReceivedPosts.jsp" role="button">Display Received Posts</a><br><br>
-<a class="btn btn-info" href="FindCustomer.html" role="button">Find Customer</a><br><br>
-<a class="btn btn-info" href="FindPostsByCityFrom.jsp" role="button">Find City</a><br><br>
-<a class="btn btn-info" href="ChangeSituation.html" role="button">Update Situations</a><br><br>
-<a class="btn btn-info" href="LogOutServlet" role="button">LogOut</a><br><br>
+    <a class="btn btn-info" href="AddBranch.jsp" role="button">Add Branch</a><br><br>
+    <a class="btn btn-info" href="AddCustomer.html" role="button">Add Customer</a><br><br>
+    <a class="btn btn-info" href="AddCity.html" role="button">Add City</a><br><br>
+    <a class="btn btn-info" href="AddPost.jsp" role="button">Add Post</a><br><br>
+    <a class="btn btn-info" href="DisplayPosts.jsp" role="button">Display Posts</a><br><br>
+    <a class="btn btn-info" href="DisplaySentPosts.jsp" role="button">Display Sent Posts</a><br><br>
+    <a class="btn btn-info" href="DisplayReceivedPosts.jsp" role="button">Display Received Posts</a><br><br>
+    <a class="btn btn-info" href="FindCustomer.html" role="button">Find Customer</a><br><br>
+    <a class="btn btn-info" href="FindPostsByCityFrom.jsp" role="button">Find City</a><br><br>
+    <a class="btn btn-info" href="FindBranch.jsp" role="button">Find Branch</a><br><br>
+    <a class="btn btn-info" href="ChangeSituation.html" role="button">Update Situations</a><br><br>
+    <a class="btn btn-info" href="LogOutServlet" role="button">LogOut</a><br><br>
 </div>
-
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

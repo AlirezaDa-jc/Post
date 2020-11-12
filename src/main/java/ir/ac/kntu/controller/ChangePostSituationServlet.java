@@ -27,9 +27,11 @@ public class ChangePostSituationServlet extends HttpServlet {
         List<Post> all = MyApp.getPostService().findAll();
         all.forEach((post) -> {
             JalaliDate sendDate = new JalaliDate(post.getSendDate());
+            post.getReceiver().deleteReceivedPost(post);
             if (sendDate.compareTo(date) <= 0) {
-                post.getReceiver().deleteReceivedPost(post);
                 post.setSituation("SENT");
+            } else {
+                post.setSituation("STORE");
             }
             JalaliDate receiveDate = new JalaliDate(post.getReceiveDate());
             if (receiveDate.compareTo(date) <= 0) {

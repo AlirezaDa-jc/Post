@@ -17,6 +17,7 @@ public class CityRepositoryImpl extends BaseRepositoryImpl<City, Long> implement
         return City.class;
     }
 
+
     @Override
     public City findByName(String city) {
         em.getTransaction().begin();

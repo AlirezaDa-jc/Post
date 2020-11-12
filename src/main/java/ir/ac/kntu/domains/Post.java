@@ -58,18 +58,20 @@ public class Post extends BaseEntity<Long> {
     public Post() {
     }
 
-    public Post(String name, double weight, String sendDate, String receiveDate, String transportation, String situation, Customer sender,
-                Customer receiver, Branch branch, City to) {
+    public Post(String name, String type, double weight, String sendDate, String receiveDate, String transportation,
+                String situation, Customer sender, Customer receiver, Branch branch, City to) {
         this.name = name;
+        this.type = type;
         this.weight = weight;
         this.sendDate = sendDate;
+        this.receiveDate = receiveDate;
         this.transportation = transportation;
         this.situation = situation;
-        this.sender = sender;
-        this.receiver = receiver;
-        this.receiveDate = receiveDate;
         this.branch = branch;
-        from = branch.getCity();
+        setFrom(branch.getCity());
+        setSender(sender);
+        setReceiver(receiver);
+        setTo(to);
         this.to = to;
     }
 
@@ -172,6 +174,24 @@ public class Post extends BaseEntity<Long> {
     public void setTo(City to) {
         this.to = to;
         to.addPostsTo(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", weight=" + weight +
+                ", sendDate='" + sendDate + '\'' +
+                ", receiveDate='" + receiveDate + '\'' +
+                ", transportation='" + transportation + '\'' +
+                ", situation='" + situation + '\'' +
+                ", sender=" + sender +
+                ", receiver=" + receiver +
+                ", branch=" + branch +
+                ", from=" + from +
+                ", to=" + to +
+                '}';
     }
 }
 

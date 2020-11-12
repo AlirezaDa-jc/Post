@@ -31,7 +31,7 @@ public class Branch extends BaseEntity<Long> {
 
     public Branch(int employees, City city) {
         this.employees = employees;
-        this.city = city;
+        setCity(city);
     }
 
     public int getEmployees() {
@@ -60,9 +60,18 @@ public class Branch extends BaseEntity<Long> {
 
     public void setCity(City city) {
         this.city = city;
+        city.addBranch(this);
     }
 
     public void addPosts(Post post) {
         posts.add(post);
+    }
+
+    @Override
+    public String toString() {
+        return "Branch{" +
+                "employees=" + employees +
+                ", city=" + city +
+                '}';
     }
 }

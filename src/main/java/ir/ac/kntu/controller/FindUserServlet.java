@@ -22,7 +22,7 @@ public class FindUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
-        String nationalCode = req.getParameter("nationalCode");
+        long nationalCode = Long.parseLong(req.getParameter("nationalCode"));
         Customer desiredCustomer = new Customer(name, nationalCode);
 
         List<Customer> all = MyApp.getCustomerService().findAll();

@@ -2,8 +2,7 @@
   Created by IntelliJ IDEA.
   User: Alireza
   Date: 11/10/2020
-  Time: 4:23 AM
-  To change this template use File | Settings | File Templates.
+  Time: 9:38 PM
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -35,6 +34,7 @@
 <a class="btn btn-info" href="DisplayReceivedPosts.jsp" role="button">Display Received Posts</a><br><br>
 <a class="btn btn-info" href="FindCustomer.html" role="button">Find Customer</a><br><br>
 <a class="btn btn-info" href="FindPostsByCityFrom.jsp" role="button">Find City</a><br><br>
+<a class="btn btn-info" href="FindBranch.jsp" role="button">Find Branch</a><br><br>
 <a class="btn btn-info" href="ChangeSituation.html" role="button">Update Situations</a><br><br>
 <a class="btn btn-info" href="LogOutServlet" role="button">LogOut</a><br><br>
 </div>

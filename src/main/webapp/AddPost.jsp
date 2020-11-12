@@ -113,7 +113,7 @@
         <input type="radio" value="VIP" name="type">
     </label>VIP
     <label>
-        <input name="gender" type="radio" value="NORMAL">
+        <input name="type" type="radio" value="NORMAL">
     </label>Normal
 
     &nbsp;

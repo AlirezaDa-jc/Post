@@ -18,7 +18,7 @@ public class Customer extends BaseEntity<Long> {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
     @Column(name = "nationalCode", nullable = false, unique = true)
-    private String nationalCode;
+    private long nationalCode;
     @Column(name = "discount", nullable = false)
     private boolean discount = false;
 
@@ -31,14 +31,14 @@ public class Customer extends BaseEntity<Long> {
     public Customer() {
     }
 
-    public Customer(String name, String nationalCode, List<Post> postsFrom, List<Post> postsTo) {
+    public Customer(String name, long nationalCode, List<Post> postsFrom, List<Post> postsTo) {
         this.name = name;
         this.nationalCode = nationalCode;
         this.postsFrom = postsFrom;
         this.postsTo = postsTo;
     }
 
-    public Customer(String name, String nationalCode) {
+    public Customer(String name, long nationalCode) {
         this.name = name;
         this.nationalCode = nationalCode;
     }
@@ -59,11 +59,11 @@ public class Customer extends BaseEntity<Long> {
         this.name = name;
     }
 
-    public String getNationalCode() {
+    public long getNationalCode() {
         return nationalCode;
     }
 
-    public void setNationalCode(String nationalCode) {
+    public void setNationalCode(long nationalCode) {
         this.nationalCode = nationalCode;
     }
 
@@ -110,5 +110,12 @@ public class Customer extends BaseEntity<Long> {
         return Objects.hash(name, nationalCode);
     }
 
-
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", nationalCode='" + nationalCode + '\'' +
+                ", discount=" + discount +
+                '}';
+    }
 }

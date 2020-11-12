@@ -91,4 +91,12 @@ public class City extends BaseEntity<Long> {
     public void addPostsFrom(Post post) {
         postsFrom.add(post);
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "name='" + name + '\'' +
+                ", coordination='" + coordination + '\'' +
+                '}';
+    }
 }

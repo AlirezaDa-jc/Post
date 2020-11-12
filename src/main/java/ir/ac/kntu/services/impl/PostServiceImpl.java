@@ -7,11 +7,8 @@ package ir.ac.kntu.services.impl;
 import ir.ac.kntu.Dao.PostRepository;
 import ir.ac.kntu.Dao.impl.PostRepositoryImpl;
 import ir.ac.kntu.base.services.impl.BaseServiceImpl;
-import ir.ac.kntu.domains.City;
 import ir.ac.kntu.domains.Post;
 import ir.ac.kntu.services.PostService;
-
-import java.util.List;
 
 public class PostServiceImpl extends BaseServiceImpl<Post, Long, PostRepository> implements PostService {
     public PostServiceImpl() {
@@ -30,15 +27,6 @@ public class PostServiceImpl extends BaseServiceImpl<Post, Long, PostRepository>
         return super.saveOrUpdate(post);
     }
 
-    @Override
-    public List<Post> findPostsCity(City city, boolean flag) {
-        return null;
-    }
-
-    @Override
-    public List<Post> findPostsCustomer(City city, boolean flag) {
-        return null;
-    }
 }
 
 enum Transportation {
