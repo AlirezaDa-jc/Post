@@ -1,5 +1,5 @@
-<%@ page import="ir.ac.kntu.domains.Branch" %>
 <%@ page import="ir.ac.kntu.MyApp" %>
+<%@ page import="ir.ac.kntu.domains.Branch" %>
 <%@ page import="ir.ac.kntu.domains.Post" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
@@ -11,7 +11,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-
+    <title>Display Branch</title>
+</head>
 <body>
 <%
     String branchId = null;
