@@ -1,3 +1,7 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.services.impl;
 
 import ir.ac.kntu.Dao.CustomerRepository;
@@ -16,8 +20,4 @@ public class CustomerServiceImpl extends BaseServiceImpl<Customer, Long, Custome
         super(repository);
     }
 
-//    @Override
-//    public List<Ticket> findByRoute(Route route) {
-//        return baseRepository.findByRoute(route);
-//    }
 }

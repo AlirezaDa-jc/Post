@@ -1,3 +1,8 @@
+/*
+ * @author Alireza.d.a
+ */
+
+
 package ir.ac.kntu.Dao.impl;
 
 import ir.ac.kntu.Dao.PostRepository;
@@ -23,19 +28,4 @@ public class PostRepositoryImpl extends BaseRepositoryImpl<Post, Long> implement
         return null;
     }
 
-//    @Override
-//    public List<Post> findByRoute(Route route) {
-//        em.getTransaction().begin();
-//        TypedQuery<Post> query = em.createQuery(
-//                "SELECT u FROM Post u where u.route=:route",
-//                Post.class);
-//
-//        query.setParameter("route", route);
-//        List<Post> resultList = query.getResultList();
-//        em.getTransaction().commit();
-//        if (resultList.size() > 0) {
-//            return resultList;
-//        }
-//        return null;
-//    }
 }

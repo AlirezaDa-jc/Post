@@ -1,11 +1,14 @@
+/*
+ * @author Alireza.d.a
+ */
+
+
 package ir.ac.kntu.domains;
 
 import ir.ac.kntu.base.JalaliDate;
 import ir.ac.kntu.base.domains.BaseEntity;
 
 import javax.persistence.*;
-
-import java.util.Date;
 
 @Entity
 @Table(name = "posts")
@@ -55,7 +58,7 @@ public class Post extends BaseEntity<Long> {
     public Post() {
     }
 
-    public Post(String name, double weight, String sendDate,String receiveDate, String transportation, String situation, Customer sender,
+    public Post(String name, double weight, String sendDate, String receiveDate, String transportation, String situation, Customer sender,
                 Customer receiver, Branch branch, City to) {
         this.name = name;
         this.weight = weight;

@@ -15,18 +15,19 @@
 </head>
 <body>
 <%
-    if(!session.isNew()) {
+    if (!session.isNew()) {
         String userName = null;
 
         Cookie[] cookies = request.getCookies();
-        if(cookies !=null){
-            for(Cookie cookie : cookies){
-                if(cookie.getName().equals("user")) userName = cookie.getValue();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("user")) userName = cookie.getValue();
 
             }
         }
-        MyApp.getUserService().findByUserName(userName);
-        response.sendRedirect("Menu.jsp");
+        if (MyApp.getUserService().findByUserName(userName) != null) {
+            response.sendRedirect("Menu.jsp");
+        }
     }
 %>
 <div class="form-group" >

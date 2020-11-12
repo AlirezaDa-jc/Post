@@ -1,3 +1,7 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.domains;
 
 import ir.ac.kntu.base.domains.BaseEntity;
@@ -91,6 +95,7 @@ public class Customer extends BaseEntity<Long> {
     public void deleteReceivedPost(Post post) {
         postsTo.remove(post);
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

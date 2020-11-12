@@ -1,3 +1,7 @@
+/*
+ * @author Alireza.d.a
+ */
+
 package ir.ac.kntu.services.impl;
 
 import ir.ac.kntu.Dao.CityRepository;
@@ -21,8 +25,4 @@ public class CityServiceImpl extends BaseServiceImpl<City, Long, CityRepository>
         return baseRepository.findByName(city);
     }
 
-//    @Override
-//    public List<Ticket> findByRoute(Route route) {
-//        return baseRepository.findByRoute(route);
-//    }
 }
